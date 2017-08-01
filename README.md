@@ -28,8 +28,9 @@ grunt.initConfig({
     options: {
       // Task-specific options go here.
     },
-    your_target: {
-      // Target-specific file lists and/or options go here.
+    files: {
+      // Speciify source and destination files.
+      // Support only one source and one destination file now.
     },
   },
 });
@@ -53,4 +54,4 @@ A string value that is used to create regex object which is used to find target 
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+0.0.1: first release, basic functions.
