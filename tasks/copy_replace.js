@@ -37,7 +37,7 @@ module.exports = function(grunt) {
       grunt.file.write(f.dest, grunt.file.read(f.dest).replace(new RegExp(options.destPattern, "g"), src));
 
       // Print a success message.
-      grunt.log.writeln('Target text in "' + f.dest + '" has been overwrittern.');
+      grunt.log.writeln('Target text in "' + f.dest + '" has been overwritten.');
     });
   });
 
