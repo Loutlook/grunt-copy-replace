@@ -13,7 +13,7 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('copy_replace', 'Find certain test in a file and use it to replace target text in another file', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      sourcePattern: null,
+      srcPattern: null,
       destPattern: null
     });
 
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         }
       }).map(function(filepath) {
         // Find the source text.
-        return grunt.file.read(filepath).match(new RegExp(options.sourcePattern, "g"));
+        return grunt.file.read(filepath).match(new RegExp(options.srcPattern, "g"));
       }).join();
 
       // Write the src text to target text in destination file.
