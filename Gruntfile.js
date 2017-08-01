@@ -30,23 +30,24 @@ module.exports = function(grunt) {
 
     copy: {
       default: {
-        files: {
-          src: ['test/fixtures/old'],
+        files: [{
+          src: ['test/fixtures/target'],
           dest: 'tmp/default_options'
-        }
+        }]
       }
     },
 
     // Configuration to be run (and then tested).
     copy_replace: {
-      default_options: {
+      default: {
         options: {
-          srcPattern: '## Examples(\n\r|[\r\n]|.)+?###',
-          destPattern: '## Examples(\n\r|[\r\n]|.)+?###'
+          srcPattern: '## Source(\n\r|[\r\n]|.)+?##',
+          destPattern: '## Target(\n\r|[\r\n]|.)+?##'
         },
-        files: {
-          'tmp/default_options': ['test/fixtures/new']
-        }
+        files: [{
+          src: ['test/fixtures/source'],
+          dest: 'tmp/default_options'
+        }]
       }
     },
 
