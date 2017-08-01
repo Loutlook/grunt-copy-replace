@@ -54,4 +54,5 @@ A string value that is used to create regex object which is used to find target 
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-0.0.1: first release, basic functions.
+0.1.0: first release, basic functions.
+0.1.1: minor changes.
