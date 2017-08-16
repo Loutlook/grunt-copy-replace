@@ -1,6 +1,6 @@
 {
   "name": "grunt-copy-replace",
-  "description": "Find certain test in a file and use it to replace target text in another file",
+  "description": "Find certain text in a file and use it to replace target text in another file",
   "version": "0.1.1",
   "homepage": "https://github.com/Loutlook/grunt-copy-replace",
   "author": {
